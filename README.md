@@ -5,12 +5,12 @@ dm_control2gym is a small wrapper to make [DeepMind Control Suite](https://githu
 ## Installation
 
 ```shell
-$ git clone https://github.com/martinseilair/dm_control2gym/
+$ git clone https://github.com/cwilson/dm_control2gym/
 $ cd dm_control2gym
 $ pip install .
 ```
 
-Tested with Python 3.5.2 and Ubuntu 16.04.
+Tested with Python 3.6.8, gym 0.15.4 and Ubuntu 18.04.
 
 ## Quick start
 
@@ -84,3 +84,4 @@ env = dm_control2gym.make(domain_name="cartpole", task_name="k_poles",task_kwarg
 ## What's new
 
 2018-01-25: Optimized registering process (thanks to [rejuvyesh](https://github.com/rejuvyesh)), added access to procedurally generated environments, added render mode functionality
+2019-12-04: Patched to work with changes made to dm_control and gym 0.15.4
